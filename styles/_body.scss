@@ -1,0 +1,92 @@
+@use '_colors.scss' as *;
+
+main {
+    background-color: $backgroundColor;
+
+.slideContainer {
+    background-color: $primaryColor;
+
+    .slideContainer__slide {
+        z-index: -1;
+        height: 10rem;
+        width: 20rem;
+    }
+
+}
+
+.about {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 20rem;
+    background-color: $primaryColor;
+    padding-bottom: 5rem;
+
+
+    .about__photo {
+        padding-top: 3rem;
+        align-self: center;
+        height: 18rem;
+        width: 15rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        margin-top: 8rem;
+        margin-bottom: 0;
+        width: 19.3rem;
+        text-align: right;
+        color:gray;
+    }
+
+    span {
+        margin-top: 0;
+        margin-bottom: 5px;
+        width: 19.3rem;
+        text-align: right;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    p {
+        margin-top: 0;
+        padding-bottom: 20px;
+        width: 19.3rem;
+        text-align: right;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+}
+
+    .ourBrand {
+
+        display: flex;
+        flex-direction: column;
+        background-color: $ourBrandColor;
+        margin-top: 0.5rem;
+
+        h2 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            font-weight: bold;
+            line-height: 40px;
+            font-size: 2rem;
+            margin-left: 2rem;
+        }
+
+        .ourBrand__images {
+            background-color: $primaryColor;
+            align-self: center;
+            height: 10rem;
+            width: 5rem;
+            padding: 6rem 6rem 6rem 6rem;
+            margin-bottom: 2rem;
+
+        }
+
+    }
+
+}
+

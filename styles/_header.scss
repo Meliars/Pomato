@@ -1,0 +1,29 @@
+@use '_hamburger.scss' as *;
+@use '_colors.scss' as *;
+
+.container {
+    background-color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .navList {
+        width: 18rem;
+        align-self:center;
+
+    .navList__list {
+        display: none;
+
+    }
+    .navList__list--active {
+        position: absolute;
+        width: 15.5rem;
+        height: 10rem;
+        padding-top: 0px;
+        margin-top: 0px;
+        display: block;
+        background-color: white ;
+        list-style: none;
+    }
+    }
+}

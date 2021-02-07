@@ -1,0 +1,167 @@
+.navContainer {
+  display: flex;
+  width: 18rem;
+  align-self: center;
+  justify-content: flex-end;
+  background-color: red;
+}
+.navContainer .hamburger {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.navContainer .hamburger:focus > .hamburger__container {
+  box-shadow: 0 0 2px 2px white;
+}
+.navContainer .hamburger__container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 35px;
+  height: 30px;
+}
+.navContainer .hamburger__bars {
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  transition: transform 220ms ease-in-out;
+}
+.navContainer .hamburger__bars:before, .navContainer .hamburger__bars:after {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  content: "";
+}
+.navContainer .hamburger__bars:before {
+  top: -12px;
+  transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+.navContainer .hamburger__bars:after {
+  bottom: -12px;
+  transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+.navContainer .hamburger--active .hamburger__bars {
+  transform: rotate(225deg);
+  transition: transform 220ms 120ms ease-in-out;
+}
+.navContainer .hamburger--active .hamburger__bars:before {
+  top: 0;
+  transition: top 100ms ease-out;
+}
+.navContainer .hamburger--active .hamburger__bars:after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
+}
+.navContainer .hamburger:focus, .navContainer .hamburger__container:focus {
+  outline: none;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .navList {
+  width: 18rem;
+  align-self: center;
+}
+.container .navList .navList__list {
+  display: none;
+}
+.container .navList .navList__list--active {
+  position: absolute;
+  width: 15.5rem;
+  height: 10rem;
+  padding-top: 0px;
+  margin-top: 0px;
+  display: block;
+  background-color: white;
+  list-style: none;
+}
+
+main {
+  background-color: red;
+}
+main .slideContainer {
+  background-color: white;
+}
+main .slideContainer .slideContainer__slide {
+  z-index: -1;
+  height: 10rem;
+  width: 20rem;
+}
+main .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 20rem;
+  background-color: white;
+  padding-bottom: 5rem;
+}
+main .about .about__photo {
+  padding-top: 3rem;
+  align-self: center;
+  height: 18rem;
+  width: 15rem;
+}
+main .about h3 {
+  font-size: 2.5rem;
+  margin-top: 8rem;
+  margin-bottom: 0;
+  width: 19.3rem;
+  text-align: right;
+  color: gray;
+}
+main .about span {
+  margin-top: 0;
+  margin-bottom: 5px;
+  width: 19.3rem;
+  text-align: right;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+main .about p {
+  margin-top: 0;
+  padding-bottom: 20px;
+  width: 19.3rem;
+  text-align: right;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+main .ourBrand {
+  display: flex;
+  flex-direction: column;
+  background-color: #dddcdc;
+  margin-top: 0.5rem;
+}
+main .ourBrand h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+main .ourBrand .ourBrand__images {
+  background-color: white;
+  align-self: center;
+  height: 10rem;
+  width: 5rem;
+  padding: 6rem 6rem 6rem 6rem;
+  margin-bottom: 2rem;
+}
+
+body {
+  background-color: white;
+  width: 320px;
+}
+
+/*# sourceMappingURL=main.css.map */
