@@ -1,4 +1,5 @@
 @use '_colors.scss' as *;
+@use '_colors.scss' as *;
 
 main {
     background-color: $backgroundColor;
@@ -60,33 +61,7 @@ main {
     }
 }
 
-    .ourBrand {
 
-        display: flex;
-        flex-direction: column;
-        background-color: $ourBrandColor;
-        margin-top: 0.5rem;
-
-        h2 {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            font-weight: bold;
-            line-height: 40px;
-            font-size: 2rem;
-            margin-left: 2rem;
-        }
-
-        .ourBrand__images {
-            background-color: $primaryColor;
-            align-self: center;
-            height: 10rem;
-            width: 5rem;
-            padding: 6rem 6rem 6rem 6rem;
-            margin-bottom: 2rem;
-
-        }
-
-    }
 
 }
 

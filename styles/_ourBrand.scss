@@ -1,0 +1,48 @@
+@use '_colors.scss' as *;
+
+main {
+
+.ourBrand {
+
+    display: flex;
+    flex-direction: column;
+    background-color: $ourBrandColor;
+    margin-top: 0.5rem;
+
+    h2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-weight: bold;
+        line-height: 40px;
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+
+    .ourBrand__images {
+        background-color: $primaryColor;
+        align-self: center;
+        height: 10rem;
+        width: 5rem;
+        padding: 6rem 6rem 6rem 6rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .ourBrand__seeMore {
+       align-self: center;
+       text-align: center;
+       background-color: black;
+       font-weight: bold;
+       width: 15rem;
+       color: $primaryColor;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       border-radius: 50% ;
+       padding-left: 1px;
+       margin-bottom: 3rem;
+
+    }
+
+}
+
+}
