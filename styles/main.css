@@ -97,6 +97,7 @@
   color: #817e7e;
 }
 .container .navList .navList__list--active {
+  z-index: 2;
   position: absolute;
   width: 17.9em;
   height: 10rem;

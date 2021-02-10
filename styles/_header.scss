@@ -8,15 +8,6 @@
     align-items: center;
     justify-content: center;
 
-        // .containerLogo {
-        //     justify-self: center;
-
-        //     .containerLogo__pomatoLogo {
-        //         just-self: center;
-
-        //     }
-        // }
-
 
     .navList {
         width: 18rem;
@@ -51,6 +42,7 @@
 
     }
     .navList__list--active {
+        z-index: 2;
         position: absolute;
         width: 17.9em;
         height: 10rem;
