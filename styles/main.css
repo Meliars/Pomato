@@ -134,14 +134,12 @@ main .about h3 {
   font-size: 2.5rem;
   margin-top: 8rem;
   margin-bottom: 0;
-  width: 19.3rem;
   text-align: right;
   color: gray;
 }
 main .about span {
   margin-top: 0;
   margin-bottom: 5px;
-  width: 19.3rem;
   text-align: right;
   font-size: 2.5rem;
   font-weight: bold;
@@ -149,7 +147,6 @@ main .about span {
 main .about p {
   margin-top: 0;
   padding-bottom: 20px;
-  width: 19.3rem;
   text-align: right;
   font-size: 17px;
   font-weight: 300;
