@@ -24,25 +24,25 @@
 }
 .navContainer .hamburger__bars {
   position: absolute;
-  width: 35px;
-  height: 2px;
+  width: 30px;
+  height: 5px;
   background-color: white;
   transition: transform 220ms ease-in-out;
 }
 .navContainer .hamburger__bars:before, .navContainer .hamburger__bars:after {
   display: block;
   position: absolute;
-  width: 35px;
-  height: 2px;
+  width: 30px;
+  height: 5px;
   background-color: white;
   content: "";
 }
 .navContainer .hamburger__bars:before {
-  top: -12px;
+  top: -10px;
   transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
 }
 .navContainer .hamburger__bars:after {
-  bottom: -12px;
+  bottom: -10px;
   transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
 }
 .navContainer .hamburger--active .hamburger__bars {
@@ -75,11 +75,32 @@
 .container .navList .navList__list {
   display: none;
 }
+.container .navList .navList__list li {
+  border-bottom: 1px solid #817e7e;
+  text-align: left;
+  margin-left: 0;
+  padding-bottom: 5px;
+}
+.container .navList .navList__list li:hover {
+  background-color: #eeeded;
+}
+.container .navList .navList__list a {
+  text-decoration: none;
+  color: #817e7e;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 1.3em;
+}
+.container .navList .navList__list a:visited {
+  color: #817e7e;
+}
 .container .navList .navList__list--active {
   position: absolute;
   width: 15.5rem;
   height: 10rem;
   padding-top: 0px;
+  padding-left: 2px;
   margin-top: 0px;
   display: block;
   background-color: white;
@@ -135,6 +156,7 @@ main .about p {
   font-size: 17px;
   font-weight: 300;
   line-height: 1.5;
+  color: #817e7e;
 }
 
 main .ourBrand {
@@ -151,13 +173,45 @@ main .ourBrand h2 {
   font-size: 2rem;
   margin-left: 2rem;
 }
-main .ourBrand .ourBrand__images {
+main .ourBrand .imageBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: white;
+  height: 10em;
+  width: 5em;
   align-self: center;
-  height: 10rem;
-  width: 5rem;
-  padding: 6rem 6rem 6rem 6rem;
+  padding: 9rem 6rem 9rem 6rem;
   margin-bottom: 2rem;
+}
+main .ourBrand .imageBox h3 {
+  font-size: 2em;
+  margin-bottom: 2px;
+}
+main .ourBrand .imageBox h3 strong {
+  color: red;
+}
+main .ourBrand .imageBox span {
+  width: 10em;
+  color: blue;
+  text-align: center;
+}
+main .ourBrand .imageBox ul {
+  list-style: none;
+  display: inline-flex;
+  align-self: center;
+  margin-right: 1em;
+  padding-right: 1em;
+}
+main .ourBrand .imageBox ul li {
+  margin-left: 0;
+  padding-left: 0;
+}
+main .ourBrand .imageBox ul li img {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 0.5em;
 }
 main .ourBrand .ourBrand__seeMore {
   align-self: center;
@@ -171,6 +225,9 @@ main .ourBrand .ourBrand__seeMore {
   border-radius: 50%;
   padding-left: 1px;
   margin-bottom: 3rem;
+}
+main .ourBrand .ourBrand__seeMore:hover {
+  background-color: #770a0a;
 }
 
 main .comments {
@@ -231,11 +288,134 @@ main .comments .comments__clientBox .comments__clientBox__ourClients h4 {
   color: orange;
 }
 main .comments .comments__clientBox .comments__clientBox__ourClients p {
+  color: #817e7e;
   width: 17rem;
   text-align: right;
   font-size: 17px;
   font-weight: 300;
   line-height: 1.5;
+}
+
+main .contactUsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+main .contactUsBox h2 {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2em;
+}
+main .contactUsBox .contactUsForm {
+  background-color: white;
+  align-self: center;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  width: 80%;
+  height: 90%;
+}
+main .contactUsBox .contactUsForm .formFieldset {
+  border: 0;
+  box-shadow: inset 0 0 0, 0 0 1em #bebdbd;
+}
+main .contactUsBox .contactUsForm .formFieldset .formFieldset__input {
+  display: block;
+  border: 1px solid red;
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+main .contactUsBox .contactUsForm .formFieldset .formFieldset__textarea {
+  display: block;
+  border: 1px solid red;
+  align-self: center;
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 12em;
+  height: 12em;
+  resize: vertical;
+}
+main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
+  display: block;
+  background-color: black;
+  color: white;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+  height: 3em;
+  width: 12em;
+}
+
+main .myAddress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+main .myAddress h3, main .myAddress address, main .myAddress p, main .myAddress ul {
+  color: white;
+  align-self: center;
+  text-align: center;
+}
+main .myAddress h3 {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  width: 90%;
+}
+main .myAddress address {
+  width: 80%;
+  margin-bottom: 1em;
+}
+main .myAddress p {
+  margin-bottom: 1px;
+  margin-top: 3px;
+}
+main .myAddress ul {
+  list-style: none;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  margin-right: 2.5em;
+}
+main .myAddress ul .myAddress__images {
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+main .myAddress .listBox .listForm {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+main .myAddress .listBox .listForm .listForm__links {
+  margin-bottom: 1em;
+}
+main .myAddress .listBox .listForm .listForm__links .listForm__links--activator {
+  color: white;
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+
+html {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 body {

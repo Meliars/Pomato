@@ -14,12 +14,37 @@
     .navList__list {
         display: none;
 
+        li {
+            border-bottom: 1px solid $textColor;
+            text-align: left;
+            margin-left: 0;
+            padding-bottom: 5px;
+        }
+
+        li:hover {
+            background-color: $hoverColor;
+        }
+
+        a {
+            text-decoration: none;
+            color: $textColor;
+            text-align: left;
+            margin-left: 0;
+            padding-left: 0;
+            font-size: 1.3em;
+        }
+
+        a:visited {
+            color: $textColor;
+        }
+
     }
     .navList__list--active {
         position: absolute;
         width: 15.5rem;
         height: 10rem;
         padding-top: 0px;
+        padding-left: 2px;
         margin-top: 0px;
         display: block;
         background-color: white ;

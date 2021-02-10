@@ -18,14 +18,56 @@ main {
         margin-left: 2rem;
     }
 
-    .ourBrand__images {
+    .imageBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: $primaryColor;
+        height: 10em;
+        width: 5em;
         align-self: center;
-        height: 10rem;
-        width: 5rem;
-        padding: 6rem 6rem 6rem 6rem;
+        padding: 9rem 6rem 9rem 6rem;
         margin-bottom: 2rem;
 
+        h3 {
+            font-size: 2em;
+            margin-bottom: 2px;
+            strong {
+                color: red;
+            }
+        }
+
+        span {
+            width: 10em;
+            color: blue;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-flex;
+            align-self: center;
+            margin-right: 1em;
+            padding-right: 1em;
+
+            li {
+                margin-left: 0;
+                padding-left: 0;
+
+                img {
+                    margin-left: 0;
+                    padding-left: 0;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+
+        .ourBrand__images {
+
+
+
+        }
     }
 
     .ourBrand__seeMore {
@@ -41,6 +83,10 @@ main {
        padding-left: 1px;
        margin-bottom: 3rem;
 
+    }
+
+    .ourBrand__seeMore:hover {
+        background-color: $buttonHoverColor;
     }
 
 }

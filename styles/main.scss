@@ -2,6 +2,14 @@
 @use '_body.scss' as *;
 @use '_ourBrand.scss' as *;
 @use '_comments.scss' as *;
+@use '_contact.scss' as *;
+@use '_address.scss' as *;
+
+html{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 body{
     background-color: white;

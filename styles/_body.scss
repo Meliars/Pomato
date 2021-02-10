@@ -1,5 +1,5 @@
 @use '_colors.scss' as *;
-@use '_colors.scss' as *;
+
 
 main {
     background-color: $backgroundColor;
@@ -16,7 +16,6 @@ main {
 }
 
 .about {
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -58,6 +57,7 @@ main {
         font-size: 17px;
         font-weight: 300;
         line-height: 1.5;
+        color: $textColor;
     }
 }
 

@@ -28,24 +28,24 @@
 
     .hamburger__bars {
         position: absolute;
-        width: 35px;
-        height: 2px;
+        width: 30px;
+        height: 5px;
         background-color: white;
         transition: transform 220ms ease-in-out;
         &:before, &:after {
             display: block;
             position: absolute;
-            width: 35px;
-            height: 2px;
+            width: 30px;
+            height: 5px;
             background-color: white;
             content: '';
         }
         &:before {
-            top: -12px;
+            top: -10px;
             transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
         }
         &:after {
-            bottom: -12px;
+            bottom: -10px;
             transition: bottom 100ms 250ms ease-in,
           			    transform 220ms ease-in-out;
         }
