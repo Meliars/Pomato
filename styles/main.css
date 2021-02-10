@@ -67,8 +67,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .container .navList {
+  width: 18rem;
   align-self: center;
 }
 .container .navList .navList__list {
@@ -110,10 +112,14 @@ main {
   background-color: red;
 }
 main .slideContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: white;
 }
 main .slideContainer .slideContainer__slide {
-  z-index: -1;
+  z-index: 0;
   height: 10rem;
   width: 20rem;
 }
@@ -284,8 +290,8 @@ main .comments .comments__clientBox .comments__clientBox__ourClients h4 {
 }
 main .comments .comments__clientBox .comments__clientBox__ourClients p {
   color: #817e7e;
-  width: 17rem;
   text-align: right;
+  padding-right: 5px;
   font-size: 17px;
   font-weight: 300;
   line-height: 1.5;
@@ -405,12 +411,6 @@ main .myAddress .listBox .listForm .listForm__links .listForm__links--activator 
   margin-bottom: 1em;
   margin-right: 1em;
   font-size: 1.5em;
-}
-
-html {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 body {

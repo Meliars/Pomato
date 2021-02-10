@@ -5,10 +5,14 @@ main {
     background-color: $backgroundColor;
 
 .slideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: $primaryColor;
 
     .slideContainer__slide {
-        z-index: -1;
+        z-index: 0;
         height: 10rem;
         width: 20rem;
     }
