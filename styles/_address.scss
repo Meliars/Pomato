@@ -1,5 +1,7 @@
 @use '_colors.scss' as *;
 
+@media (max-width: 330px) {
+
 main {
 
     .myAddress {
@@ -81,4 +83,96 @@ main {
 
         }
     }
+}
+}
+
+@media  (min-width: 330px) and (max-width:788px) {
+
+    main {
+
+        .myAddress {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $buttonBackground;
+
+            h3, address, p, ul {
+                color: $primaryColor;
+                align-self: center;
+                text-align: center;
+            }
+
+            h3 {
+                border-bottom: 1px solid $primaryColor;
+                padding-bottom: 5px;
+                width: 90%;
+
+            }
+
+            address {
+                width: 80%;
+                margin-bottom: 1em;
+
+            }
+
+            p {
+                margin-bottom: 1px;
+                margin-top: 3px;
+
+            }
+
+            ul {
+                list-style: none;
+                overflow: hidden;
+                display: inline-flex;
+                justify-content: center;
+                margin-right: 2.5em;
+
+
+                .myAddress__images {
+                    width: 2.5em;
+                    height: 2.5em;
+                    line-height: 2em;
+                    padding-left: 1em;
+                    padding-right: 1em;
+                    margin-top: 1em;
+                    text-align: center;
+                }
+
+            }
+            .listBox {
+
+                display: flex;
+                justify-content: center;
+
+                .listForm {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                width: 80%;
+
+
+                    .listForm__links {
+                        margin-bottom: 1em;
+
+                        .listForm__links--activator {
+                            color: $primaryColor;
+                            text-align: center;
+                            align-self: center;
+                            text-decoration: none;
+                            // margin-bottom: 1em;
+                            // margin-right: 1em;
+                            font-size: 1.5em;
+
+                        }
+
+                     }
+                }
+
+
+            }
+        }
+    }
+
 }

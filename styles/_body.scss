@@ -1,6 +1,6 @@
 @use '_colors.scss' as *;
 
-
+@media (max-width: 330px) {
 main {
     background-color: $backgroundColor;
 
@@ -23,7 +23,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    // width: 20rem;
     background-color: $primaryColor;
     padding-bottom: 5rem;
 
@@ -35,37 +34,121 @@ main {
         width: 15rem;
     }
 
-    h3 {
-        font-size: 2.5rem;
-        margin-top: 8rem;
-        margin-bottom: 0;
-        // width: 19.3rem;
-        text-align: right;
-        color:gray;
-    }
+    .about__text {
 
-    span {
-        margin-top: 0;
-        margin-bottom: 5px;
-        // width: 19.3rem;
-        text-align: right;
-        font-size: 2.5rem;
-        font-weight: bold;
-    }
+        background-color: $primaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        h3 {
+            font-size: 2.5rem;
+            margin-top: 8rem;
+            margin-bottom: 0;
+            text-align: right;
+            color:gray;
+        }
+    
+        span {
+            margin-top: 0;
+            margin-bottom: 5px;
+            text-align: right;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+    
+        p {
+            margin-top: 0;
+            padding-bottom: 20px;
+            text-align: right;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 1.5;
+            color: $textColor;
+        }
 
-    p {
-        margin-top: 0;
-        padding-bottom: 20px;
-        // width: 19.3rem;
-        text-align: right;
-        font-size: 17px;
-        font-weight: 300;
-        line-height: 1.5;
-        color: $textColor;
+
+    }
     }
 }
-
-
-
 }
 
+@media  (min-width: 330px) and (max-width:788px) {
+    
+    main {
+        background-color: $backgroundColor;
+    
+    .slideContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $primaryColor;
+    
+        .slideContainer__slide {
+            z-index: 0;
+            max-height: 20rem;
+            width: 100%;
+        }
+    
+    }
+    
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: $primaryColor;
+        padding-bottom: 5em;
+        padding-right: 2em;
+        padding-left: 2em;
+        padding-top: 5em;
+    
+    
+        .about__photo {
+            padding-top: 3rem;
+            align-self: center;
+            height: 18rem;
+            width: 15rem;
+        }
+
+        .about__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: $primaryColor;
+
+            h3 {
+                font-size: 2.5rem;
+                // margin-top: 8rem;
+                margin-bottom: 0;
+                text-align: right;
+                color:gray;
+            }
+        
+            span {
+                margin-top: 0;
+                margin-bottom: 5px;
+                text-align: right;
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+        
+            p {
+                margin-top: 0;
+                padding-bottom: 20px;
+                text-align: right;
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 1.5;
+                color: $textColor;
+            }
+
+
+        }
+    
+       
+        }
+    }
+
+}
