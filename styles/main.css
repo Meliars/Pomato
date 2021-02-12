@@ -685,8 +685,6 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 20em;
-    height: 2em;
   }
   main .contactUsBox .contactUsForm .formFieldset .formFieldset__phoneInput {
     display: block;
@@ -695,8 +693,6 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 20em;
-    height: 2em;
   }
   main .contactUsBox .contactUsForm .formFieldset .formFieldset__textarea {
     display: block;
@@ -706,8 +702,6 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 20em;
-    height: 12em;
     resize: vertical;
   }
   main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
