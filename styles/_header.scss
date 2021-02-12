@@ -58,72 +58,72 @@
 }
 // }
 
-// @media  (min-width: 1090px) and (max-width:2340px) and (orientation: landscape) {
+@media  (min-width: 700px) {
 
-//     .container {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: flex-start;
-//         align-items: center;
-//         background-image: url('../images/hea.png');
-//         background-position: 94em;
-//         height: 5em;
-//         padding: 0;
-//         margin: 0;
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: url('../images/hea.png');
+        background-position: 94em;
+        height: 5em;
+        padding: 0;
+        margin: 0;
 
-//         .containerLogo {
+        .containerLogo {
 
-//             .containerLogo__pomatoLogo {
+            .containerLogo__pomatoLogo {
 
-//                 padding-left: 1em;
-//                 height: 2.5em;
-//             }
-//         }
+                padding-left: 1em;
+                height: 2.5em;
+            }
+        }
 
-//         .navList {
-//             background-color: transparent;
-//             width: 100%;
-//             align-self:center;
+        .navList {
+            background-color: transparent;
+            width: 100%;
+            align-self:center;
 
-//         .navList__list {
-//             display: inline-flex;
-//             list-style: none;
-//             justify-content: space-between;
+        .navList__list {
+            display: inline-flex;
+            list-style: none;
+            justify-content: space-between;
 
-//             li {
-//                 background-color: transparent;
-//                 padding-bottom: 5px;
-//                 padding-left: 2.5em;
-//             }
+            li {
+                background-color: transparent;
+                padding-bottom: 5px;
+                padding-left: 2.5em;
+            }
 
-//             li:hover {
+            li:hover {
 
-//                 background-color: transparent;
+                background-color: transparent;
 
-//             }
+            }
 
-//             a {
-//                 background-color: transparent;
-//                 text-decoration: none;
-//                 color: $primaryColor;
-//                 text-align: left;
-//                 margin-left: 0;
-//                 padding-left: 0;
-//                 font-size: 1.3em;
-//             }
+            a {
+                background-color: transparent;
+                text-decoration: none;
+                color: $primaryColor;
+                text-align: left;
+                margin-left: 0;
+                padding-left: 0;
+                font-size: 1.3em;
+            }
 
-//             a:visited {
-//                 color: $primaryColor;
-//                 background-color: transparent;
-//             }
+            a:visited {
+                color: $primaryColor;
+                background-color: transparent;
+            }
 
-//         }
-
-
-
-//         }
-
-//     }
+        }
 
 
-// }
+
+        }
+
+    }
+
+
+}

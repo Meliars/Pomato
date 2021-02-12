@@ -109,6 +109,54 @@
   list-style: none;
 }
 
+@media (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../images/hea.png");
+    background-position: 94em;
+    height: 5em;
+    padding: 0;
+    margin: 0;
+  }
+  .container .containerLogo .containerLogo__pomatoLogo {
+    padding-left: 1em;
+    height: 2.5em;
+  }
+  .container .navList {
+    background-color: transparent;
+    width: 100%;
+    align-self: center;
+  }
+  .container .navList .navList__list {
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+  .container .navList .navList__list li {
+    background-color: transparent;
+    padding-bottom: 5px;
+    padding-left: 2.5em;
+  }
+  .container .navList .navList__list li:hover {
+    background-color: transparent;
+  }
+  .container .navList .navList__list a {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 1.3em;
+  }
+  .container .navList .navList__list a:visited {
+    color: white;
+    background-color: transparent;
+  }
+}
 main {
   background-color: red;
 }
