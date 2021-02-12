@@ -1,7 +1,7 @@
 @use '_hamburger.scss' as *;
 @use '_colors.scss' as *;
 
-@media (max-width: 320px) {
+@media (max-width: 1080px) {
 .container {
     background-color: $primaryColor;
     display: flex;
@@ -58,7 +58,7 @@
 }
 }
 
-@media  (min-width: 321px) and (max-width:788px) {
+@media  (min-width: 1080px) and (max-width:2340px) {
 
     .container {
         display: flex;
