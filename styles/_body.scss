@@ -1,6 +1,6 @@
 @use '_colors.scss' as *;
 
-@media (max-width:1090px) {
+@media (max-width:1200px) {
 main {
     background-color: $backgroundColor;
 
@@ -73,7 +73,7 @@ main {
 }
 }
 
-@media  (min-width:1090px) and (max-width:2340px) {
+@media  (min-width:1200px) and (max-width:2340px) {
     
     main {
         background-color: $backgroundColor;
