@@ -63,7 +63,7 @@
     outline: none;
   }
 }
-@media (min-width: 1080px) and (orientation: landscape) and (max-width: 2340px) {
+@media (min-width: 1090px) and (max-width: 2340px) and (orientation: landscape) {
   .container .navContainer {
     display: none;
   }
@@ -172,7 +172,7 @@
     list-style: none;
   }
 }
-@media (min-width: 1080px) and (orientation: landscape) and (max-width: 2340px) {
+@media (min-width: 1090px) and (max-width: 2340px) and (orientation: landscape) {
   .container {
     display: flex;
     flex-direction: row;
@@ -280,7 +280,7 @@
     color: #817e7e;
   }
 }
-@media (min-width: 1080px) and (orientation: landscape) and (max-width: 2340px) {
+@media (min-width: 1090px) and (max-width: 2340px) and (orientation: landscape) {
   main {
     background-color: red;
   }
@@ -425,7 +425,7 @@
     background-color: #770a0a;
   }
 }
-@media (min-width: 1080px) and (orientation: landscape) and (max-width: 2340px) {
+@media (min-width: 1090px) and (max-width: 2340px) and (orientation: landscape) {
   main .ourBrand {
     display: flex;
     flex-direction: column;
@@ -581,7 +581,7 @@
     line-height: 1.5;
   }
 }
-@media (min-width: 1080px) and (orientation: landscape) and (max-width: 2340px) {
+@media (min-width: 1090px) and (max-width: 2340px) and (orientation: landscape) {
   main .comments {
     background-color: white;
   }
@@ -717,7 +717,7 @@
     width: 12em;
   }
 }
-@media (min-width: 1080px) and (orientation: landscape) and (max-width: 2340px) {
+@media (min-width: 1090px) and (max-width: 2340px) and (orientation: landscape) {
   main .contactUsBox {
     display: flex;
     flex-direction: column;
@@ -851,7 +851,7 @@
     font-size: 1.5em;
   }
 }
-@media (min-width: 1080px) and (orientation: landscape) and (max-width: 2340px) {
+@media (min-width: 1090px) and (max-width: 2340px) and (orientation: landscape) {
   main .myAddress {
     display: flex;
     flex-direction: column;
