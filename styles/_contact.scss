@@ -1,6 +1,6 @@
 @use '_colors.scss' as *;
 
-@media (max-width: 1080px) {
+// @media (max-width: 1080px) {
 main {
     .contactUsBox {
 
@@ -81,92 +81,92 @@ main {
         }
     }
 }
-}
+// }
 
-@media  (min-width: 1090px) and (max-width:2340px) and (orientation: landscape) {
+// @media  (min-width: 1090px) and (max-width:2340px) and (orientation: landscape) {
 
-    main {
-        .contactUsBox {
+//     main {
+//         .contactUsBox {
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-color: $primaryColor;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             background-color: $primaryColor;
 
-            h2 {
-                font-weight: bold;
-                font-size: 4em;
-                text-align: left;
+//             h2 {
+//                 font-weight: bold;
+//                 font-size: 4em;
+//                 text-align: left;
 
-            }
+//             }
 
-            .contactUsForm {
-            background-color: $primaryColor;
-            align-self: center;
-            padding-top: 2em;
-            padding-bottom: 4em;
-            width: 80%;
-            height: 30em;
+//             .contactUsForm {
+//             background-color: $primaryColor;
+//             align-self: center;
+//             padding-top: 2em;
+//             padding-bottom: 4em;
+//             width: 80%;
+//             height: 30em;
 
-            .formFieldset {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                border: 0 ;
-                box-shadow: $boxShadowAndColor;
+//             .formFieldset {
+//                 display: flex;
+//                 flex-direction: row;
+//                 flex-wrap: wrap;
+//                 justify-content: space-around;
+//                 border: 0 ;
+//                 box-shadow: $boxShadowAndColor;
 
-                .formFieldset__input {
-                    display: block;
-                    border: 1px solid $backgroundColor;
-                    margin-top: 1.5em;
-                    margin-left: auto;
-                    margin-right: auto;
-                    text-align: center;
-                    width: 20em;
-                    height: 2em;
+//                 .formFieldset__input {
+//                     display: block;
+//                     border: 1px solid $backgroundColor;
+//                     margin-top: 1.5em;
+//                     margin-left: auto;
+//                     margin-right: auto;
+//                     text-align: center;
+//                     width: 20em;
+//                     height: 2em;
 
-                }
+//                 }
 
-                .formFieldset__phoneInput {
-                    display: block;
-                    border: 1px solid $backgroundColor;
-                    margin-top: 1.5em;
-                    margin-left: auto;
-                    margin-right: auto;
-                    text-align: center;
-                    width: 41.5em;
-                    height: 2em;
-                }
+//                 .formFieldset__phoneInput {
+//                     display: block;
+//                     border: 1px solid $backgroundColor;
+//                     margin-top: 1.5em;
+//                     margin-left: auto;
+//                     margin-right: auto;
+//                     text-align: center;
+//                     width: 41.5em;
+//                     height: 2em;
+//                 }
 
-                .formFieldset__textarea {
-                    display: block;
-                    border: 1px solid $backgroundColor;
-                    align-self: center;
-                    margin-top: 1.5em;
-                    margin-left: auto;
-                    margin-right: auto;
-                    text-align: center;
-                    width: 41.5em;
-                    height: 12em;
-                    resize: vertical;
-                }
+//                 .formFieldset__textarea {
+//                     display: block;
+//                     border: 1px solid $backgroundColor;
+//                     align-self: center;
+//                     margin-top: 1.5em;
+//                     margin-left: auto;
+//                     margin-right: auto;
+//                     text-align: center;
+//                     width: 41.5em;
+//                     height: 12em;
+//                     resize: vertical;
+//                 }
 
-                .formFieldset__send {
-                    display: block;
-                    background-color: $buttonBackground;
-                    color: $primaryColor;
-                    align-self: center;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 1.5em;
-                    margin-bottom: 2.5em;
-                    height: 3em;
-                    width: 12em;
-                }
+//                 .formFieldset__send {
+//                     display: block;
+//                     background-color: $buttonBackground;
+//                     color: $primaryColor;
+//                     align-self: center;
+//                     margin-left: auto;
+//                     margin-right: auto;
+//                     margin-top: 1.5em;
+//                     margin-bottom: 2.5em;
+//                     height: 3em;
+//                     width: 12em;
+//                 }
 
-                }
-            }
-        }
-    }
-}
+//                 }
+//             }
+//         }
+//     }
+// }

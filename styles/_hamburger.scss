@@ -1,4 +1,4 @@
-@media (max-width: 1080px) {
+// @media (max-width: 1080px) {
 .navContainer {
     display: flex;
     width: 18rem;
@@ -77,89 +77,89 @@
     }
 }
 
-}
+// }
 
-@media  (min-width: 1090px) and (max-width:2340px) and (orientation: landscape) {
+// @media  (min-width: 1090px) and (max-width:2340px) and (orientation: landscape) {
 
-    .container {
+//     .container {
 
-        .navContainer {
+//         .navContainer {
 
-        display: none;
+//         display: none;
 
-        .hamburger {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            background-color: transparent;
-            cursor: pointer;
-            &:focus {
-                & > .hamburger__container {
-                      box-shadow: 0 0 2px 2px white;
-                }
-            }
-        }
+//         .hamburger {
+//             margin: 0;
+//             padding: 0;
+//             border: 0;
+//             background-color: transparent;
+//             cursor: pointer;
+//             &:focus {
+//                 & > .hamburger__container {
+//                       box-shadow: 0 0 2px 2px white;
+//                 }
+//             }
+//         }
 
-        .hamburger__container {
-            display: flex;
-            align-items: center;
-            position: relative;
-            width: 35px;
-            height: 30px;
-        }
+//         .hamburger__container {
+//             display: flex;
+//             align-items: center;
+//             position: relative;
+//             width: 35px;
+//             height: 30px;
+//         }
 
-        .hamburger__bars {
-            position: absolute;
-            width: 30px;
-            height: 5px;
-            background-color: white;
-            transition: transform 220ms ease-in-out;
-            &:before, &:after {
-                display: block;
-                position: absolute;
-                width: 30px;
-                height: 5px;
-                background-color: white;
-                content: '';
-            }
-            &:before {
-                top: -10px;
-                transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
-            }
-            &:after {
-                bottom: -10px;
-                transition: bottom 100ms 250ms ease-in,
-                              transform 220ms ease-in-out;
-            }
+//         .hamburger__bars {
+//             position: absolute;
+//             width: 30px;
+//             height: 5px;
+//             background-color: white;
+//             transition: transform 220ms ease-in-out;
+//             &:before, &:after {
+//                 display: block;
+//                 position: absolute;
+//                 width: 30px;
+//                 height: 5px;
+//                 background-color: white;
+//                 content: '';
+//             }
+//             &:before {
+//                 top: -10px;
+//                 transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+//             }
+//             &:after {
+//                 bottom: -10px;
+//                 transition: bottom 100ms 250ms ease-in,
+//                               transform 220ms ease-in-out;
+//             }
 
-        }
+//         }
 
-        .hamburger--active {
-            .hamburger__bars {
-                transform: rotate(225deg);
-                transition: transform 220ms 120ms ease-in-out;
-                &:before {
-                    top: 0;
-                    transition: top 100ms ease-out;
-                }
-                &:after {
-                    bottom: 0;
-                    transform: rotate(-90deg);
-                    transition: bottom 100ms ease-out,
-                                  transform 220ms 120ms ease-in-out;
-                }
-            }
-        }
+//         .hamburger--active {
+//             .hamburger__bars {
+//                 transform: rotate(225deg);
+//                 transition: transform 220ms 120ms ease-in-out;
+//                 &:before {
+//                     top: 0;
+//                     transition: top 100ms ease-out;
+//                 }
+//                 &:after {
+//                     bottom: 0;
+//                     transform: rotate(-90deg);
+//                     transition: bottom 100ms ease-out,
+//                                   transform 220ms 120ms ease-in-out;
+//                 }
+//             }
+//         }
 
-        .hamburger, .hamburger__container {
-            &:focus {
-                  outline: none;
-              }
-        }
-
-
-    }
-}
+//         .hamburger, .hamburger__container {
+//             &:focus {
+//                   outline: none;
+//               }
+//         }
 
 
-}
+//     }
+// }
+
+
+// }
