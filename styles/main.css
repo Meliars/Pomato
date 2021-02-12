@@ -711,6 +711,79 @@ main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
   width: 12em;
 }
 
+@media (min-width: 700px) {
+  main .contactUsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+  main .contactUsBox h2 {
+    font-weight: bold;
+    font-size: 4em;
+    text-align: left;
+  }
+  main .contactUsBox .contactUsForm {
+    background-color: white;
+    align-self: center;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    width: 80%;
+    height: 30em;
+  }
+  main .contactUsBox .contactUsForm .formFieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 0;
+    box-shadow: inset 0 0 0, 0 0 1em #bebdbd;
+  }
+  main .contactUsBox .contactUsForm .formFieldset .formFieldset__input {
+    display: block;
+    border: 1px solid red;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 20em;
+    height: 2em;
+  }
+  main .contactUsBox .contactUsForm .formFieldset .formFieldset__phoneInput {
+    display: block;
+    border: 1px solid red;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 41.5em;
+    height: 2em;
+  }
+  main .contactUsBox .contactUsForm .formFieldset .formFieldset__textarea {
+    display: block;
+    border: 1px solid red;
+    align-self: center;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 41.5em;
+    height: 12em;
+    resize: vertical;
+  }
+  main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
+    display: block;
+    background-color: black;
+    color: white;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    height: 3em;
+    width: 12em;
+  }
+}
 main .myAddress {
   display: flex;
   flex-direction: column;
@@ -771,6 +844,69 @@ main .myAddress .listBox .listForm .listForm__links .listForm__links--activator 
   font-size: 1.5em;
 }
 
+@media (min-width: 700px) {
+  main .myAddress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+  }
+  main .myAddress h3, main .myAddress address, main .myAddress p, main .myAddress ul {
+    color: white;
+    align-self: center;
+    text-align: center;
+  }
+  main .myAddress h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    width: 90%;
+  }
+  main .myAddress address {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+  main .myAddress p {
+    margin-bottom: 1px;
+    margin-top: 3px;
+  }
+  main .myAddress ul {
+    list-style: none;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 2.5em;
+  }
+  main .myAddress ul .myAddress__images {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+    text-align: center;
+  }
+  main .myAddress .listBox {
+    display: flex;
+    justify-content: center;
+  }
+  main .myAddress .listBox .listForm {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+  }
+  main .myAddress .listBox .listForm .listForm__links {
+    margin-bottom: 1em;
+  }
+  main .myAddress .listBox .listForm .listForm__links .listForm__links--activator {
+    color: white;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+}
 html {
   padding: 0;
   margin: 0;
