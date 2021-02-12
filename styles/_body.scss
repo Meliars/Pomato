@@ -1,6 +1,5 @@
 @use '_colors.scss' as *;
 
-// @media (max-width: 1080px) {
 main {
     background-color: $backgroundColor;
 
@@ -48,7 +47,7 @@ main {
             text-align: right;
             color:gray;
         }
-    
+
         span {
             margin-top: 0;
             margin-bottom: 5px;
@@ -56,7 +55,7 @@ main {
             font-size: 2.5rem;
             font-weight: bold;
         }
-    
+
         p {
             margin-top: 0;
             padding-bottom: 20px;
@@ -71,84 +70,83 @@ main {
     }
     }
 }
-// }
 
-// @media  (min-width: 1090px) and (max-width:2340px) and (orientation: landscape) {
-    
-//     main {
-//         background-color: $backgroundColor;
-    
-//     .slideContainer {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         background-color: $primaryColor;
-    
-//         .slideContainer__slide {
-//             z-index: 0;
-//             max-height: 20rem;
-//             width: 100%;
-//         }
-    
-//     }
-    
-//     .about {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: flex-end;
-//         background-color: $primaryColor;
-//         padding-bottom: 5em;
-//         padding-right: 2em;
-//         padding-left: 2em;
-//         padding-top: 5em;
-    
-    
-//         .about__photo {
-//             padding-top: 3rem;
-//             align-self: center;
-//             height: 18rem;
-//             width: 15rem;
-//         }
+@media  (min-width: 700px) {
 
-//         .about__text {
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             align-items: flex-end;
-//             background-color: $primaryColor;
+    main {
+        background-color: $backgroundColor;
 
-//             h3 {
-//                 font-size: 2.5rem;
-//                 // margin-top: 8rem;
-//                 margin-bottom: 0;
-//                 text-align: right;
-//                 color:gray;
-//             }
-        
-//             span {
-//                 margin-top: 0;
-//                 margin-bottom: 5px;
-//                 text-align: right;
-//                 font-size: 2.5rem;
-//                 font-weight: bold;
-//             }
-        
-//             p {
-//                 margin-top: 0;
-//                 padding-bottom: 20px;
-//                 text-align: right;
-//                 font-size: 17px;
-//                 font-weight: 300;
-//                 line-height: 1.5;
-//                 color: $textColor;
-//             }
+    .slideContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $primaryColor;
+
+        .slideContainer__slide {
+            z-index: 0;
+            max-height: 20rem;
+            width: 100%;
+        }
+
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: $primaryColor;
+        padding-bottom: 5em;
+        padding-right: 2em;
+        padding-left: 2em;
+        padding-top: 5em;
 
 
-//         }
-    
-       
-//         }
-//     }
+        .about__photo {
+            padding-top: 3rem;
+            align-self: center;
+            height: 18rem;
+            width: 15rem;
+        }
 
-// }
+        .about__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: $primaryColor;
+
+            h3 {
+                font-size: 2.5rem;
+                // margin-top: 8rem;
+                margin-bottom: 0;
+                text-align: right;
+                color:gray;
+            }
+
+            span {
+                margin-top: 0;
+                margin-bottom: 5px;
+                text-align: right;
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            p {
+                margin-top: 0;
+                padding-bottom: 20px;
+                text-align: right;
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 1.5;
+                color: $textColor;
+            }
+
+
+        }
+
+
+        }
+    }
+
+}

@@ -62,6 +62,67 @@
   outline: none;
 }
 
+@media (min-width: 700px) {
+  .container .navContainer {
+    display: none;
+  }
+  .container .navContainer .hamburger {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .container .navContainer .hamburger:focus > .hamburger__container {
+    box-shadow: 0 0 2px 2px white;
+  }
+  .container .navContainer .hamburger__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 35px;
+    height: 30px;
+  }
+  .container .navContainer .hamburger__bars {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    transition: transform 220ms ease-in-out;
+  }
+  .container .navContainer .hamburger__bars:before, .container .navContainer .hamburger__bars:after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    content: "";
+  }
+  .container .navContainer .hamburger__bars:before {
+    top: -10px;
+    transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+  }
+  .container .navContainer .hamburger__bars:after {
+    bottom: -10px;
+    transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
+  }
+  .container .navContainer .hamburger--active .hamburger__bars {
+    transform: rotate(225deg);
+    transition: transform 220ms 120ms ease-in-out;
+  }
+  .container .navContainer .hamburger--active .hamburger__bars:before {
+    top: 0;
+    transition: top 100ms ease-out;
+  }
+  .container .navContainer .hamburger--active .hamburger__bars:after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
+  }
+  .container .navContainer .hamburger:focus, .container .navContainer .hamburger__container:focus {
+    outline: none;
+  }
+}
 .container {
   background-color: white;
   display: flex;
@@ -216,6 +277,68 @@ main .about .about__text p {
   color: #817e7e;
 }
 
+@media (min-width: 700px) {
+  main {
+    background-color: red;
+  }
+  main .slideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  main .slideContainer .slideContainer__slide {
+    z-index: 0;
+    max-height: 20rem;
+    width: 100%;
+  }
+  main .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: white;
+    padding-bottom: 5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 5em;
+  }
+  main .about .about__photo {
+    padding-top: 3rem;
+    align-self: center;
+    height: 18rem;
+    width: 15rem;
+  }
+  main .about .about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+  }
+  main .about .about__text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    text-align: right;
+    color: gray;
+  }
+  main .about .about__text span {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  main .about .about__text p {
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-align: right;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #817e7e;
+  }
+}
 main .ourBrand {
   display: flex;
   flex-direction: column;
