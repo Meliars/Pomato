@@ -1,6 +1,5 @@
 @use '_colors.scss' as *;
 
-// @media (max-width: 1080px) {
 main {
 
 .ourBrand {
@@ -113,120 +112,119 @@ main {
 }
 
 }
-// }
 
-// @media  (min-width: 1090px) and (max-width:2340px) and (orientation: landscape) {
+@media  (min-width: 700px) {
 
-//     main {
+    main {
 
-//         .ourBrand {
+        .ourBrand {
 
-//             display: flex;
-//             flex-direction: column;
-//             background-color: $ourBrandColor;
-//             margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            background-color: $ourBrandColor;
+            margin-top: 0.5rem;
 
-//             .ourBrand_header {
+            .ourBrand_header {
 
-//                 background-color: $primaryColor;
-//                 margin-bottom: 3em;
-//                 padding-left: 0;
+                background-color: $primaryColor;
+                margin-bottom: 3em;
+                padding-left: 0;
 
-//                 h2 {
-//                     padding-top: 2rem;
-//                     padding-bottom: 2rem;
-//                     font-weight: bold;
-//                     line-height: 40px;
-//                     font-size: 2rem;
-//                     margin-left: 1rem;
-//                 }
+                h2 {
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    font-weight: bold;
+                    line-height: 40px;
+                    font-size: 2rem;
+                    margin-left: 1rem;
+                }
 
-//             }
+            }
 
-//             .landscape {
+            .landscape {
 
-//                     display: flex;
-//                     flex-direction: row;
-//                     flex-wrap: wrap;
-//                     justify-content: space-around;
-//                     align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
 
-//                 .imageBox {
+                .imageBox {
 
-//                     display: flex;
-//                     flex-direction: column;
-//                     justify-content: center;
-//                     align-items: center;
-//                     background-color: $primaryColor;
-//                     width: 5em;
-//                     align-self: center;
-//                     padding: 6rem 4rem 6rem 4rem;
-//                     margin-bottom: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $primaryColor;
+                    width: 5em;
+                    align-self: center;
+                    padding: 6rem 4rem 6rem 4rem;
+                    margin-bottom: 2rem;
 
-//                     h3 {
-//                         font-size: 1.5em;
-//                         margin-bottom: 2px;
-//                         strong {
-//                             color: red;
-//                         }
-//                     }
+                    h3 {
+                        font-size: 1.5em;
+                        margin-bottom: 2px;
+                        strong {
+                            color: red;
+                        }
+                    }
 
-//                     span {
-//                         width: 10em;
-//                         color: blue;
-//                         text-align: center;
-//                     }
+                    span {
+                        width: 10em;
+                        color: blue;
+                        text-align: center;
+                    }
 
-//                     ul {
-//                         list-style: none;
-//                         display: inline-flex;
-//                         align-self: center;
-//                         margin-right: 1em;
-//                         padding-right: 1em;
+                    ul {
+                        list-style: none;
+                        display: inline-flex;
+                        align-self: center;
+                        margin-right: 1em;
+                        padding-right: 1em;
 
-//                         li {
-//                             margin-left: 0;
-//                             padding-left: 0;
+                        li {
+                            margin-left: 0;
+                            padding-left: 0;
 
-//                             img {
-//                                 margin-left: 0;
-//                                 padding-left: 0;
-//                                 margin-right: 0.5em;
-//                             }
-//                         }
-//                     }
+                            img {
+                                margin-left: 0;
+                                padding-left: 0;
+                                margin-right: 0.5em;
+                            }
+                        }
+                    }
 
-//                     .ourBrand__images {
+                    .ourBrand__images {
 
-//                         height: 7em;
-
+                        height: 7em;
 
 
 
-//                     }
-//                 }
 
-//             }
+                    }
+                }
 
-//             .ourBrand__seeMore {
-//                align-self: center;
-//                text-align: center;
-//                background-color: black;
-//                font-weight: bold;
-//                width: 15rem;
-//                color: $primaryColor;
-//                padding-top: 1rem;
-//                padding-bottom: 1rem;
-//                border-radius: 50% ;
-//                padding-left: 1px;
-//                margin-bottom: 3rem;
+            }
 
-//             }
+            .ourBrand__seeMore {
+               align-self: center;
+               text-align: center;
+               background-color: black;
+               font-weight: bold;
+               width: 15rem;
+               color: $primaryColor;
+               padding-top: 1rem;
+               padding-bottom: 1rem;
+               border-radius: 50% ;
+               padding-left: 1px;
+               margin-bottom: 3rem;
 
-//             .ourBrand__seeMore:hover {
-//                 background-color: $buttonHoverColor;
-//             }
+            }
 
-//         }
-//     }
-// }
+            .ourBrand__seeMore:hover {
+                background-color: $buttonHoverColor;
+            }
+
+        }
+    }
+}
