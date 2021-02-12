@@ -73,7 +73,7 @@ main {
 }
 }
 
-@media  (min-width: 1080px) and (max-width:2340px) {
+@media  (min-width: 1080px) and  (orientation: landscape) and (max-width:2340px) {
     
     main {
         background-color: $backgroundColor;
