@@ -22,7 +22,7 @@ main {
         padding-top: 2em;
         padding-bottom: 4em;
         width: 80%;
-        height: 90%;
+        height: 30em;
 
         .formFieldset {
             border: 0 ;
@@ -35,6 +35,8 @@ main {
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
+                width: 20em;
+                height: 2em;
 
             }
 
@@ -45,6 +47,8 @@ main {
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
+                width: 20em;
+                height: 2em;
             }
 
             .formFieldset__textarea {
@@ -55,7 +59,7 @@ main {
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
-                width: 12em;
+                width: 20em;
                 height: 12em;
                 resize: vertical;
             }
