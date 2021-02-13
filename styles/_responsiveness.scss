@@ -1,0 +1,6 @@
+@mixin device-width {
+    @media (min-width: 576px) { @content; }
+}
+@mixin for-tablet {
+    @media (min-width: 700px) {@content; }
+}

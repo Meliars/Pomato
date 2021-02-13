@@ -1,128 +1,157 @@
 @use '_hamburger.scss' as *;
 @use '_colors.scss' as *;
-
+@use '_responsiveness.scss' as *;
 .container {
-    background-color: $primaryColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
-    .navList {
-        width: 18rem;
-        align-self:center;
-
-    .navList__list {
-        display: none;
-
-        li {
-            border-bottom: 1px solid $textColor;
-            text-align: left;
-            margin-left: 0;
-            padding-bottom: 5px;
-        }
-
-        li:hover {
-            background-color: $hoverColor;
-        }
-
-        a {
-            text-decoration: none;
-            color: $textColor;
-            text-align: left;
-            margin-left: 0;
-            padding-left: 0;
-            font-size: 1.3em;
-        }
-
-        a:visited {
-            color: $textColor;
-        }
-
-    }
-    .navList__list--active {
-        z-index: 2;
-        position: absolute;
-        width: 17.9em;
-        height: 10rem;
-        padding-top: 0px;
-        padding-left: 2px;
-        margin-top: 0px;
-        display: block;
-        background-color: white ;
-        list-style: none;
-    }
-    }
+	margin: 0;
+	padding: 0;
+	background-color: $primaryColor;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.navList {
+		width: 18rem;
+		align-self: center;
+		.navList__list {
+			display: none;
+			li {
+				border-bottom: 1px solid $textColor;
+				text-align: left;
+				margin-left: 0;
+				padding-bottom: 5px;
+				&:hover {
+					background-color: $hoverColor;
+				}
+			}
+			a {
+				text-decoration: none;
+				color: $textColor;
+				text-align: left;
+				margin-left: 0;
+				padding-left: 0;
+				font-size: 1.3em;
+				&:visited {
+					color: $textColor;
+				}
+			}
+		}
+		.navList__list--active {
+			z-index: 2;
+			position: absolute;
+			width: 17.9em;
+			height: 10rem;
+			padding-top: 0px;
+			padding-left: 2px;
+			margin-top: 0px;
+			display: block;
+			background-color: white;
+			list-style: none;
+		}
+	}
 }
 
+@include device-width {
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		background-image: url('../images/hea.png');
+		background-position: 94em;
+		height: 5em;
+		padding: 0;
+		margin: 0;
+		.containerLogo {
+			.containerLogo__pomatoLogo {
+				padding-left: 1em;
+				height: 2.5em;
+			}
+		}
+		.navList {
+			position: absolute;
+			margin-left: 15.7em;
+			margin-top: 3em;
+			width: 100%;
+			align-self: center;
+			.navList__list {
+				display: none;
+				list-style: none;
+				li {
+					text-align: left;
+					border-bottom: 1px solid $textColor;
+					background-color: transparent;
+					padding-bottom: 5px;
+					padding-left: 0;
+					&:hover {
+						background-color: $hoverColor;
+					}
+				}
+				a {
+					background-color: transparent;
+					text-decoration: none;
+					color: $textColor;
+					text-align: left;
+					margin-left: 0;
+					padding-left: 0;
+					font-size: 1.3em;
+					&:visited {
+						color: $textColor;
+						background-color: transparent;
+					}
+				}
+			}
+			.navList__list--active {
+				width: 51%;
+				display: block;
+			}
+		}
+	}
+}
 
-@media  (min-width: 700px) {
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        background-image: url('../images/hea.png');
-        background-position: 94em;
-        height: 5em;
-        padding: 0;
-        margin: 0;
-
-        .containerLogo {
-
-            .containerLogo__pomatoLogo {
-
-                padding-left: 1em;
-                height: 2.5em;
-            }
-        }
-
-        .navList {
-            background-color: transparent;
-            width: 100%;
-            align-self:center;
-
-        .navList__list {
-            display: inline-flex;
-            list-style: none;
-            justify-content: space-between;
-
-            li {
-                background-color: transparent;
-                padding-bottom: 5px;
-                padding-left: 2.5em;
-            }
-
-            li:hover {
-
-                background-color: transparent;
-
-            }
-
-            a {
-                background-color: transparent;
-                text-decoration: none;
-                color: $primaryColor;
-                text-align: left;
-                margin-left: 0;
-                padding-left: 0;
-                font-size: 1.3em;
-            }
-
-            a:visited {
-                color: $primaryColor;
-                background-color: transparent;
-            }
-
-        }
-
-
-
-        }
-
-    }
-
-
+@include for-tablet {
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		background-image: url('../images/hea.png');
+		background-position: 94em;
+		height: 5em;
+		padding: 0;
+		margin: 0;
+		.containerLogo {
+			.containerLogo__pomatoLogo {
+				padding-left: 1em;
+				height: 2.5em;
+			}
+		}
+		.navList {
+			background-color: transparent;
+			width: 62%;
+			margin-left: 13em;
+			margin-top: 1em;
+			.navList__list {
+				display: flex;
+				justify-content: space-between;
+				li {
+					border-bottom: none;
+					background-color: transparent;
+					padding-bottom: 1em;
+				}
+				li:hover {
+					background-color: transparent;
+				}
+				a {
+					background-color: transparent;
+					text-decoration: none;
+					color: $primaryColor;
+					&:visited {
+						color: $primaryColor;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
 }

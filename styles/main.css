@@ -58,10 +58,80 @@
   transform: rotate(-90deg);
   transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
 }
-.navContainer .hamburger:focus, .navContainer .hamburger__container:focus {
+.navContainer .hamburger:focus,
+.navContainer .hamburger__container:focus {
   outline: none;
 }
 
+@media (min-width: 576px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .container .navContainer {
+    background-color: black;
+    width: 60%;
+    margin-left: 2.5em;
+    height: 3em;
+  }
+  .container .navContainer .hamburger {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .container .navContainer .hamburger:focus > .hamburger__container {
+    box-shadow: 0 0 2px 2px white;
+  }
+  .container .navContainer .hamburger__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 35px;
+    height: 30px;
+  }
+  .container .navContainer .hamburger__bars {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    transition: transform 220ms ease-in-out;
+  }
+  .container .navContainer .hamburger__bars:before, .container .navContainer .hamburger__bars:after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    content: "";
+  }
+  .container .navContainer .hamburger__bars:before {
+    top: -10px;
+    transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+  }
+  .container .navContainer .hamburger__bars:after {
+    bottom: -10px;
+    transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
+  }
+  .container .navContainer .hamburger--active .hamburger__bars {
+    transform: rotate(225deg);
+    transition: transform 220ms 120ms ease-in-out;
+  }
+  .container .navContainer .hamburger--active .hamburger__bars:before {
+    top: 0;
+    transition: top 100ms ease-out;
+  }
+  .container .navContainer .hamburger--active .hamburger__bars:after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
+  }
+  .container .navContainer .hamburger:focus,
+.container .navContainer .hamburger__container:focus {
+    outline: none;
+  }
+}
 @media (min-width: 700px) {
   .container .navContainer {
     display: none;
@@ -119,11 +189,14 @@
     transform: rotate(-90deg);
     transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
   }
-  .container .navContainer .hamburger:focus, .container .navContainer .hamburger__container:focus {
+  .container .navContainer .hamburger:focus,
+.container .navContainer .hamburger__container:focus {
     outline: none;
   }
 }
 .container {
+  margin: 0;
+  padding: 0;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -170,6 +243,62 @@
   list-style: none;
 }
 
+@media (min-width: 576px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../images/hea.png");
+    background-position: 94em;
+    height: 5em;
+    padding: 0;
+    margin: 0;
+  }
+  .container .containerLogo .containerLogo__pomatoLogo {
+    padding-left: 1em;
+    height: 2.5em;
+  }
+  .container .navList {
+    position: absolute;
+    margin-left: 15.7em;
+    margin-top: 3em;
+    width: 100%;
+    align-self: center;
+  }
+  .container .navList .navList__list {
+    display: none;
+    list-style: none;
+  }
+  .container .navList .navList__list li {
+    text-align: left;
+    border-bottom: 1px solid #817e7e;
+    background-color: transparent;
+    padding-bottom: 5px;
+    padding-left: 0;
+  }
+  .container .navList .navList__list li:hover {
+    background-color: #eeeded;
+  }
+  .container .navList .navList__list a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #817e7e;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 1.3em;
+  }
+  .container .navList .navList__list a:visited {
+    color: #817e7e;
+    background-color: transparent;
+  }
+  .container .navList .navList__list--active {
+    width: 51%;
+    display: block;
+  }
+}
 @media (min-width: 700px) {
   .container {
     display: flex;
@@ -188,18 +317,18 @@
   }
   .container .navList {
     background-color: transparent;
-    width: 100%;
-    align-self: center;
+    width: 62%;
+    margin-left: 13em;
+    margin-top: 1em;
   }
   .container .navList .navList__list {
-    display: inline-flex;
-    list-style: none;
+    display: flex;
     justify-content: space-between;
   }
   .container .navList .navList__list li {
+    border-bottom: none;
     background-color: transparent;
-    padding-bottom: 5px;
-    padding-left: 2.5em;
+    padding-bottom: 1em;
   }
   .container .navList .navList__list li:hover {
     background-color: transparent;
@@ -208,10 +337,6 @@
     background-color: transparent;
     text-decoration: none;
     color: white;
-    text-align: left;
-    margin-left: 0;
-    padding-left: 0;
-    font-size: 1.3em;
   }
   .container .navList .navList__list a:visited {
     color: white;
@@ -277,7 +402,7 @@ main .about .about__text p {
   color: #817e7e;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 576px) {
   main {
     background-color: red;
   }
@@ -295,7 +420,7 @@ main .about .about__text p {
   }
   main .about {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
     background-color: white;
     padding-bottom: 5em;
@@ -306,8 +431,8 @@ main .about .about__text p {
   main .about .about__photo {
     padding-top: 3rem;
     align-self: center;
-    height: 18rem;
-    width: 15rem;
+    height: 40rem;
+    width: 35rem;
   }
   main .about .about__text {
     display: flex;
@@ -319,6 +444,69 @@ main .about .about__text p {
   main .about .about__text h3 {
     font-size: 2.5rem;
     margin-bottom: 0;
+    text-align: right;
+    color: gray;
+  }
+  main .about .about__text span {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  main .about .about__text p {
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-align: right;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #817e7e;
+  }
+}
+@media (min-width: 700px) {
+  main {
+    background-color: red;
+  }
+  main .slideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  main .slideContainer .slideContainer__slide {
+    z-index: 0;
+    height: 20em;
+    width: 100%;
+  }
+  main .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: white;
+    padding-bottom: 3em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 2em;
+    height: 27em;
+  }
+  main .about .about__photo {
+    align-self: center;
+    height: 20rem;
+    width: 15rem;
+    margin-bottom: 4em;
+  }
+  main .about .about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    margin-bottom: 7em;
+  }
+  main .about .about__text h3 {
+    font-size: 2.5rem;
     text-align: right;
     color: gray;
   }
@@ -421,7 +609,7 @@ main .ourBrand .ourBrand__seeMore:hover {
   background-color: #770a0a;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 576px) {
   main .ourBrand {
     display: flex;
     flex-direction: column;
@@ -439,6 +627,92 @@ main .ourBrand .ourBrand__seeMore:hover {
     font-weight: bold;
     line-height: 40px;
     font-size: 2rem;
+    margin-left: 1rem;
+  }
+  main .ourBrand .landscape {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .ourBrand .landscape .imageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 5em;
+    align-self: center;
+    padding: 6rem 4rem 6rem 4rem;
+    margin-bottom: 2rem;
+  }
+  main .ourBrand .landscape .imageBox h3 {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+  }
+  main .ourBrand .landscape .imageBox h3 strong {
+    color: red;
+  }
+  main .ourBrand .landscape .imageBox span {
+    width: 10em;
+    color: blue;
+    text-align: center;
+  }
+  main .ourBrand .landscape .imageBox ul {
+    list-style: none;
+    display: inline-flex;
+    align-self: center;
+    margin-right: 1em;
+    padding-right: 1em;
+  }
+  main .ourBrand .landscape .imageBox ul li {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  main .ourBrand .landscape .imageBox ul li img {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0.5em;
+  }
+  main .ourBrand .landscape .imageBox .ourBrand__images {
+    height: 7em;
+  }
+  main .ourBrand .ourBrand__seeMore {
+    align-self: center;
+    text-align: center;
+    background-color: black;
+    font-weight: bold;
+    width: 15rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+    padding-left: 1px;
+    margin-bottom: 3rem;
+  }
+  main .ourBrand .ourBrand__seeMore:hover {
+    background-color: #770a0a;
+  }
+}
+@media (min-width: 700px) {
+  main .ourBrand {
+    display: flex;
+    flex-direction: column;
+    background-color: #dddcdc;
+    margin-top: 0.5rem;
+  }
+  main .ourBrand .ourBrand_header {
+    background-color: white;
+    margin-bottom: 3em;
+    padding-left: 0;
+  }
+  main .ourBrand .ourBrand_header h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 4rem;
     margin-left: 1rem;
   }
   main .ourBrand .landscape {
@@ -555,7 +829,9 @@ main .comments .comments__clientBox .comments__clientBox__ourClients {
 main .comments .comments__clientBox .comments__clientBox__ourClients .comments__clientBox__ourClients__quote {
   display: none;
 }
-main .comments .comments__clientBox .comments__clientBox__ourClients h3, main .comments .comments__clientBox .comments__clientBox__ourClients h4, main .comments .comments__clientBox .comments__clientBox__ourClients p {
+main .comments .comments__clientBox .comments__clientBox__ourClients h3,
+main .comments .comments__clientBox .comments__clientBox__ourClients h4,
+main .comments .comments__clientBox .comments__clientBox__ourClients p {
   text-align: center;
 }
 main .comments .comments__clientBox .comments__clientBox__ourClients h3 {
@@ -576,7 +852,7 @@ main .comments .comments__clientBox .comments__clientBox__ourClients p {
   line-height: 1.5;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 576px) {
   main .comments {
     background-color: white;
   }
@@ -593,7 +869,6 @@ main .comments .comments__clientBox .comments__clientBox__ourClients p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 30em;
   }
   main .comments .comments__clientBox ul {
     display: flex;
@@ -628,7 +903,9 @@ main .comments .comments__clientBox .comments__clientBox__ourClients p {
     margin-left: auto;
     margin-right: auto;
   }
-  main .comments .comments__clientBox .comments__clientBox__ourClients h3, main .comments .comments__clientBox .comments__clientBox__ourClients h4, main .comments .comments__clientBox .comments__clientBox__ourClients p {
+  main .comments .comments__clientBox .comments__clientBox__ourClients h3,
+main .comments .comments__clientBox .comments__clientBox__ourClients h4,
+main .comments .comments__clientBox .comments__clientBox__ourClients p {
     text-align: center;
   }
   main .comments .comments__clientBox .comments__clientBox__ourClients h3 {
@@ -647,6 +924,7 @@ main .comments .comments__clientBox .comments__clientBox__ourClients p {
     padding-right: 5px;
     font-size: 17px;
     line-height: 1.5;
+    padding-bottom: 5%;
   }
 }
 main .contactUsBox {
@@ -696,6 +974,8 @@ main .contactUsBox .contactUsForm .formFieldset .formFieldset__textarea {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  width: 12em;
+  height: 6em;
   resize: vertical;
 }
 main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
@@ -711,7 +991,7 @@ main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
   width: 12em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 576px) {
   main .contactUsBox {
     display: flex;
     flex-direction: column;
@@ -742,11 +1022,11 @@ main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
   main .contactUsBox .contactUsForm .formFieldset .formFieldset__input {
     display: block;
     border: 1px solid red;
+    flex-basis: 40%;
     margin-top: 1.5em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 20em;
     height: 2em;
   }
   main .contactUsBox .contactUsForm .formFieldset .formFieldset__phoneInput {
@@ -756,7 +1036,7 @@ main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 41.5em;
+    flex-basis: 90%;
     height: 2em;
   }
   main .contactUsBox .contactUsForm .formFieldset .formFieldset__textarea {
@@ -767,7 +1047,7 @@ main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 41.5em;
+    flex-basis: 90%;
     height: 12em;
     resize: vertical;
   }
@@ -790,7 +1070,10 @@ main .myAddress {
   justify-content: center;
   background-color: black;
 }
-main .myAddress h3, main .myAddress address, main .myAddress p, main .myAddress ul {
+main .myAddress h3,
+main .myAddress address,
+main .myAddress p,
+main .myAddress ul {
   color: white;
   align-self: center;
   text-align: center;
@@ -834,7 +1117,7 @@ main .myAddress .listBox .listForm {
 main .myAddress .listBox .listForm .listForm__links {
   margin-bottom: 1em;
 }
-main .myAddress .listBox .listForm .listForm__links .listForm__links--activator {
+main .myAddress .listBox .listForm .listForm__links.--activator {
   color: white;
   text-align: center;
   align-self: center;
@@ -844,14 +1127,17 @@ main .myAddress .listBox .listForm .listForm__links .listForm__links--activator 
   font-size: 1.5em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 576px) {
   main .myAddress {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: black;
   }
-  main .myAddress h3, main .myAddress address, main .myAddress p, main .myAddress ul {
+  main .myAddress h3,
+main .myAddress address,
+main .myAddress p,
+main .myAddress ul {
     color: white;
     align-self: center;
     text-align: center;
@@ -894,17 +1180,17 @@ main .myAddress .listBox .listForm .listForm__links .listForm__links--activator 
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 60%;
   }
   main .myAddress .listBox .listForm .listForm__links {
     margin-bottom: 1em;
   }
-  main .myAddress .listBox .listForm .listForm__links .listForm__links--activator {
+  main .myAddress .listBox .listForm .listForm__links.--activator {
     color: white;
     text-align: center;
     align-self: center;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 17px;
   }
 }
 html {
