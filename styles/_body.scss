@@ -26,6 +26,14 @@ main {
 			height: 18rem;
 			width: 15rem;
 		}
+		.about__image {
+			display: none;
+			z-index: 0;
+			position: absolute;
+			&.image {
+				width: 65em;
+			}
+		}
 		.about__text {
 			background-color: $primaryColor;
 			display: flex;
@@ -148,9 +156,10 @@ main {
 			height: 27em;
 			.about__photo {
 				align-self: center;
-				height: 20rem;
-				width: 15rem;
+				height: 24rem;
+				width: 20rem;
 				margin-bottom: 4em;
+				margin-right: 1em;
 			}
 			.about__text {
 				display: flex;
@@ -179,6 +188,214 @@ main {
 					font-weight: 300;
 					line-height: 1.5;
 					color: $textColor;
+					width: 18em;
+				}
+			}
+		}
+	}
+}
+@include for-small-desktop {
+	main {
+		background-color: $backgroundColor;
+		.slideContainer {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: $primaryColor;
+			.slideContainer__slide {
+				z-index: 0;
+				height: 20em;
+				width: 100%;
+			}
+		}
+		.about {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			background-color: $primaryColor;
+			padding-bottom: 3em;
+			padding-right: 2em;
+			padding-left: 2em;
+			padding-top: 2em;
+			height: 27em;
+			.about__photo {
+				align-self: center;
+				height: 24rem;
+				width: 20rem;
+				margin-bottom: 4em;
+				margin-right: 7em;
+			}
+			.about__text {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-end;
+				background-color: $primaryColor;
+				margin-bottom: 7em;
+				h3 {
+					font-size: 2.5rem;
+					text-align: right;
+					color: gray;
+				}
+				span {
+					margin-top: 0;
+					margin-bottom: 5px;
+					text-align: right;
+					font-size: 2.5rem;
+					font-weight: bold;
+				}
+				p {
+					margin-top: 0;
+					padding-bottom: 20px;
+					text-align: right;
+					font-size: 17px;
+					font-weight: 300;
+					line-height: 1.5;
+					color: $textColor;
+					width: 18em;
+				}
+			}
+		}
+	}
+}
+@include for-medium-desktop {
+	main {
+		background-color: $backgroundColor;
+		.slideContainer {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: $primaryColor;
+			.slideContainer__slide {
+				z-index: 0;
+				height: 20em;
+				width: 100%;
+			}
+		}
+		.about {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			background-color: $primaryColor;
+			padding-bottom: 3em;
+			padding-right: 2em;
+			padding-left: 2em;
+			padding-top: 2em;
+			height: 27em;
+			.about__photo {
+				align-self: center;
+				height: 24rem;
+				width: 20rem;
+				margin-bottom: 4em;
+				margin-right: 13em;
+			}
+			.about__text {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-end;
+				background-color: $primaryColor;
+				margin-bottom: 7em;
+				margin-right: 3em;
+				h3 {
+					font-size: 2.5rem;
+					text-align: right;
+					color: gray;
+				}
+				span {
+					margin-top: 0;
+					margin-bottom: 5px;
+					text-align: right;
+					font-size: 2.5rem;
+					font-weight: bold;
+				}
+				p {
+					margin-top: 0;
+					padding-bottom: 20px;
+					text-align: right;
+					font-size: 17px;
+					font-weight: 300;
+					line-height: 1.5;
+					color: $textColor;
+					width: 18em;
+				}
+			}
+		}
+	}
+}
+@include for-desktop {
+	main {
+		background-color: $backgroundColor;
+		.slideContainer {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: $primaryColor;
+			.slideContainer__slide {
+				z-index: 0;
+				height: 20em;
+				width: 100%;
+			}
+		}
+		.about {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			background-color: $primaryColor;
+			padding-bottom: 3em;
+			padding-right: 2em;
+			padding-left: 2em;
+			padding-top: 2em;
+			height: 27em;
+			.about__photo {
+				z-index: 2;
+				align-self: center;
+				height: 24rem;
+				width: 20rem;
+				margin-bottom: 4em;
+				margin-right: 13em;
+			}
+			.about__image {
+				display: flex;
+				z-index: 0;
+				position: absolute;
+				&.image {
+					width: 65em;
+				}
+			}
+			.about__text {
+				z-index: 2;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-end;
+				background-color: $primaryColor;
+				margin-bottom: 7em;
+				margin-right: 10em;
+				h3 {
+					font-size: 2.5rem;
+					text-align: right;
+					color: gray;
+				}
+				span {
+					margin-top: 0;
+					margin-bottom: 5px;
+					text-align: right;
+					font-size: 2.5rem;
+					font-weight: bold;
+				}
+				p {
+					margin-top: 0;
+					padding-bottom: 20px;
+					text-align: right;
+					font-size: 17px;
+					font-weight: 300;
+					line-height: 1.5;
+					color: $textColor;
+					width: 35em;
 				}
 			}
 		}

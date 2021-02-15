@@ -210,6 +210,9 @@
 .container .navList .navList__list {
   display: none;
 }
+.container .navList .navList__list .navList__item {
+  display: none;
+}
 .container .navList .navList__list li {
   border-bottom: 1px solid #817e7e;
   text-align: left;
@@ -229,6 +232,9 @@
 }
 .container .navList .navList__list a:visited {
   color: #817e7e;
+}
+.container .navList .navList__list .navlist__item {
+  display: none;
 }
 .container .navList .navList__list--active {
   z-index: 2;
@@ -294,6 +300,9 @@
     color: #817e7e;
     background-color: transparent;
   }
+  .container .navList .navList__list .navlist__item {
+    display: none;
+  }
   .container .navList .navList__list--active {
     width: 51%;
     display: block;
@@ -325,6 +334,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .container .navList .navList__list .navList__item {
+    display: inline;
+  }
   .container .navList .navList__list li {
     border-bottom: none;
     background-color: transparent;
@@ -341,6 +353,106 @@
   .container .navList .navList__list a:visited {
     color: white;
     background-color: transparent;
+  }
+  .container .navList .navList__list a:hover {
+    font-size: 2em;
+  }
+  .container .navList .navList__list .navlist__item {
+    display: none;
+  }
+}
+@media (min-width: 850px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../images/hea.png");
+    background-position: 100em;
+    height: 5em;
+    padding: 0;
+    margin: 0;
+  }
+  .container .containerLogo .containerLogo__pomatoLogo {
+    padding-left: 2em;
+    height: 3.5em;
+  }
+  .container .navList {
+    background-color: transparent;
+    width: 62%;
+    margin-left: 17em;
+    margin-top: 1em;
+  }
+  .container .navList .navList__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .navList .navList__list li {
+    border-bottom: none;
+    background-color: transparent;
+    padding-bottom: 1em;
+  }
+  .container .navList .navList__list li:hover {
+    background-color: transparent;
+  }
+  .container .navList .navList__list a {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+  }
+  .container .navList .navList__list a:visited {
+    color: white;
+    background-color: transparent;
+  }
+  .container .navList .navList__list .navlist__item {
+    display: none;
+  }
+}
+@media (min-width: 950px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../images/hea.png");
+    background-position: 100em;
+    height: 5em;
+    padding: 0;
+    margin: 0;
+  }
+  .container .containerLogo .containerLogo__pomatoLogo {
+    padding-left: 2em;
+    height: 3.5em;
+  }
+  .container .navList {
+    background-color: transparent;
+    width: 50%;
+    margin-left: 25em;
+    margin-top: 1em;
+  }
+  .container .navList .navList__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .navList .navList__list li {
+    border-bottom: none;
+    background-color: transparent;
+    padding-bottom: 1em;
+  }
+  .container .navList .navList__list li:hover {
+    background-color: transparent;
+  }
+  .container .navList .navList__list a {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+  }
+  .container .navList .navList__list a:visited {
+    color: white;
+    background-color: transparent;
+  }
+  .container .navList .navList__list .navlist__item {
+    display: inline;
   }
 }
 main {
@@ -370,6 +482,14 @@ main .about .about__photo {
   align-self: center;
   height: 18rem;
   width: 15rem;
+}
+main .about .about__image {
+  display: none;
+  z-index: 0;
+  position: absolute;
+}
+main .about .about__image.image {
+  width: 65em;
 }
 main .about .about__text {
   background-color: white;
@@ -493,9 +613,10 @@ main .about .about__text p {
   }
   main .about .about__photo {
     align-self: center;
-    height: 20rem;
-    width: 15rem;
+    height: 24rem;
+    width: 20rem;
     margin-bottom: 4em;
+    margin-right: 1em;
   }
   main .about .about__text {
     display: flex;
@@ -525,6 +646,214 @@ main .about .about__text p {
     font-weight: 300;
     line-height: 1.5;
     color: #817e7e;
+    width: 18em;
+  }
+}
+@media (min-width: 850px) {
+  main {
+    background-color: red;
+  }
+  main .slideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  main .slideContainer .slideContainer__slide {
+    z-index: 0;
+    height: 20em;
+    width: 100%;
+  }
+  main .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: white;
+    padding-bottom: 3em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 2em;
+    height: 27em;
+  }
+  main .about .about__photo {
+    align-self: center;
+    height: 24rem;
+    width: 20rem;
+    margin-bottom: 4em;
+    margin-right: 7em;
+  }
+  main .about .about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    margin-bottom: 7em;
+  }
+  main .about .about__text h3 {
+    font-size: 2.5rem;
+    text-align: right;
+    color: gray;
+  }
+  main .about .about__text span {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  main .about .about__text p {
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-align: right;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #817e7e;
+    width: 18em;
+  }
+}
+@media (min-width: 950px) {
+  main {
+    background-color: red;
+  }
+  main .slideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  main .slideContainer .slideContainer__slide {
+    z-index: 0;
+    height: 20em;
+    width: 100%;
+  }
+  main .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: white;
+    padding-bottom: 3em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 2em;
+    height: 27em;
+  }
+  main .about .about__photo {
+    align-self: center;
+    height: 24rem;
+    width: 20rem;
+    margin-bottom: 4em;
+    margin-right: 13em;
+  }
+  main .about .about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    margin-bottom: 7em;
+    margin-right: 3em;
+  }
+  main .about .about__text h3 {
+    font-size: 2.5rem;
+    text-align: right;
+    color: gray;
+  }
+  main .about .about__text span {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  main .about .about__text p {
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-align: right;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #817e7e;
+    width: 18em;
+  }
+}
+@media (min-width: 1050px) {
+  main {
+    background-color: red;
+  }
+  main .slideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  main .slideContainer .slideContainer__slide {
+    z-index: 0;
+    height: 20em;
+    width: 100%;
+  }
+  main .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: white;
+    padding-bottom: 3em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 2em;
+    height: 27em;
+  }
+  main .about .about__photo {
+    z-index: 2;
+    align-self: center;
+    height: 24rem;
+    width: 20rem;
+    margin-bottom: 4em;
+    margin-right: 13em;
+  }
+  main .about .about__image {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+  }
+  main .about .about__image.image {
+    width: 65em;
+  }
+  main .about .about__text {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    margin-bottom: 7em;
+    margin-right: 10em;
+  }
+  main .about .about__text h3 {
+    font-size: 2.5rem;
+    text-align: right;
+    color: gray;
+  }
+  main .about .about__text span {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  main .about .about__text p {
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-align: right;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #817e7e;
+    width: 35em;
   }
 }
 main .ourBrand {
@@ -728,7 +1057,7 @@ main .ourBrand .ourBrand__seeMore:hover {
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 5em;
+    width: 6em;
     align-self: center;
     padding: 6rem 4rem 6rem 4rem;
     margin-bottom: 2rem;
@@ -763,6 +1092,269 @@ main .ourBrand .ourBrand__seeMore:hover {
   }
   main .ourBrand .landscape .imageBox .ourBrand__images {
     height: 7em;
+  }
+  main .ourBrand .ourBrand__seeMore {
+    align-self: center;
+    text-align: center;
+    background-color: black;
+    font-weight: bold;
+    width: 15rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+    padding-left: 1px;
+    margin-bottom: 3rem;
+  }
+  main .ourBrand .ourBrand__seeMore:hover {
+    background-color: #770a0a;
+  }
+}
+@media (min-width: 850px) {
+  main .ourBrand {
+    display: flex;
+    flex-direction: column;
+    background-color: #dddcdc;
+    margin-top: 0.5rem;
+  }
+  main .ourBrand .ourBrand_header {
+    background-color: white;
+    margin-bottom: 3em;
+    padding-left: 0;
+  }
+  main .ourBrand .ourBrand_header h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 4rem;
+    margin-left: 1rem;
+  }
+  main .ourBrand .landscape {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0em 2em 0em 2em;
+  }
+  main .ourBrand .landscape .imageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 7em;
+    align-self: center;
+    padding: 6rem 4rem 6rem 4rem;
+    margin-bottom: 2rem;
+  }
+  main .ourBrand .landscape .imageBox h3 {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+  }
+  main .ourBrand .landscape .imageBox h3 strong {
+    color: red;
+  }
+  main .ourBrand .landscape .imageBox span {
+    width: 10em;
+    color: blue;
+    text-align: center;
+  }
+  main .ourBrand .landscape .imageBox ul {
+    list-style: none;
+    display: inline-flex;
+    align-self: center;
+    margin-right: 1em;
+    padding-right: 1em;
+  }
+  main .ourBrand .landscape .imageBox ul li {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  main .ourBrand .landscape .imageBox ul li img {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0.5em;
+  }
+  main .ourBrand .landscape .imageBox .ourBrand__images {
+    height: 10em;
+  }
+  main .ourBrand .ourBrand__seeMore {
+    align-self: center;
+    text-align: center;
+    background-color: black;
+    font-weight: bold;
+    width: 15rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+    padding-left: 1px;
+    margin-bottom: 3rem;
+  }
+  main .ourBrand .ourBrand__seeMore:hover {
+    background-color: #770a0a;
+  }
+}
+@media (min-width: 950px) {
+  main .ourBrand {
+    display: flex;
+    flex-direction: column;
+    background-color: #dddcdc;
+    margin-top: 0.5rem;
+  }
+  main .ourBrand .ourBrand_header {
+    background-color: white;
+    margin-bottom: 3em;
+    padding-left: 0;
+  }
+  main .ourBrand .ourBrand_header h2 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 4rem;
+    margin-left: 1rem;
+  }
+  main .ourBrand .landscape {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0em 2em 0em 2em;
+  }
+  main .ourBrand .landscape .imageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 7em;
+    align-self: center;
+    padding: 6rem 4rem 6rem 4rem;
+    margin-bottom: 2rem;
+  }
+  main .ourBrand .landscape .imageBox h3 {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+  }
+  main .ourBrand .landscape .imageBox h3 strong {
+    color: red;
+  }
+  main .ourBrand .landscape .imageBox span {
+    width: 10em;
+    color: blue;
+    text-align: center;
+  }
+  main .ourBrand .landscape .imageBox ul {
+    list-style: none;
+    display: inline-flex;
+    align-self: center;
+    margin-right: 1em;
+    padding-right: 1em;
+  }
+  main .ourBrand .landscape .imageBox ul li {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  main .ourBrand .landscape .imageBox ul li img {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0.5em;
+  }
+  main .ourBrand .landscape .imageBox .ourBrand__images {
+    height: 10em;
+  }
+  main .ourBrand .ourBrand__seeMore {
+    align-self: center;
+    text-align: center;
+    background-color: black;
+    font-weight: bold;
+    width: 15rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+    padding-left: 1px;
+    margin-bottom: 3rem;
+  }
+  main .ourBrand .ourBrand__seeMore:hover {
+    background-color: #770a0a;
+  }
+}
+@media (min-width: 1050px) {
+  main .ourBrand {
+    display: flex;
+    flex-direction: column;
+    background-color: #dddcdc;
+    margin-top: 0.5rem;
+  }
+  main .ourBrand .ourBrand_header {
+    background-color: white;
+    margin-bottom: 3em;
+    padding-left: 0;
+  }
+  main .ourBrand .ourBrand_header h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 4rem;
+    margin-left: 1rem;
+  }
+  main .ourBrand .landscape {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0em 2em 0em 2em;
+  }
+  main .ourBrand .landscape .imageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 15em;
+    height: 20em;
+    align-self: center;
+    padding: 6rem 4rem 6rem 4rem;
+    margin-bottom: 2rem;
+  }
+  main .ourBrand .landscape .imageBox h3 {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+  }
+  main .ourBrand .landscape .imageBox h3 strong {
+    color: red;
+  }
+  main .ourBrand .landscape .imageBox span {
+    width: 10em;
+    color: blue;
+    text-align: center;
+  }
+  main .ourBrand .landscape .imageBox ul {
+    list-style: none;
+    display: inline-flex;
+    align-self: center;
+    margin-right: 1em;
+    padding-right: 1em;
+  }
+  main .ourBrand .landscape .imageBox ul li {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  main .ourBrand .landscape .imageBox ul li img {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0.5em;
+  }
+  main .ourBrand .landscape .imageBox .ourBrand__images {
+    height: 17em;
   }
   main .ourBrand .ourBrand__seeMore {
     align-self: center;
@@ -1064,6 +1656,82 @@ main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
     width: 12em;
   }
 }
+@media (min-width: 1050px) {
+  main .contactUsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+  main .contactUsBox h2 {
+    font-weight: bold;
+    font-size: 4em;
+    text-align: center;
+  }
+  main .contactUsBox .contactUsForm {
+    background-color: white;
+    align-self: center;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    width: 60%;
+    height: 32em;
+  }
+  main .contactUsBox .contactUsForm .formFieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 0;
+    box-shadow: inset 0 0 0, 0 0 1em #bebdbd;
+  }
+  main .contactUsBox .contactUsForm .formFieldset .formFieldset__input {
+    display: block;
+    border: 1px solid red;
+    flex-basis: 40%;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    height: 3em;
+  }
+  main .contactUsBox .contactUsForm .formFieldset .formFieldset__phoneInput {
+    display: block;
+    border: 1px solid red;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    flex-basis: 90%;
+    height: 3em;
+  }
+  main .contactUsBox .contactUsForm .formFieldset .formFieldset__textarea {
+    display: block;
+    border: 1px solid red;
+    align-self: center;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    flex-basis: 90%;
+    height: 16em;
+    resize: vertical;
+  }
+  main .contactUsBox .contactUsForm .formFieldset .formFieldset__send {
+    display: block;
+    background-color: black;
+    color: white;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    height: 3em;
+    width: 12em;
+  }
+}
 main .myAddress {
   display: flex;
   flex-direction: column;
@@ -1181,6 +1849,72 @@ main .myAddress ul {
     justify-content: space-around;
     align-items: center;
     width: 60%;
+  }
+  main .myAddress .listBox .listForm .listForm__links {
+    margin-bottom: 1em;
+  }
+  main .myAddress .listBox .listForm .listForm__links.--activator {
+    color: white;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1050px) {
+  main .myAddress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+  }
+  main .myAddress h3,
+main .myAddress address,
+main .myAddress p,
+main .myAddress ul {
+    color: white;
+    align-self: center;
+    text-align: center;
+  }
+  main .myAddress h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    width: 90%;
+  }
+  main .myAddress address {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+  main .myAddress p {
+    margin-bottom: 1px;
+    margin-top: 3px;
+  }
+  main .myAddress ul {
+    list-style: none;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 2.5em;
+  }
+  main .myAddress ul .myAddress__images {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+    text-align: center;
+  }
+  main .myAddress .listBox {
+    display: flex;
+    justify-content: center;
+  }
+  main .myAddress .listBox .listForm {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
   }
   main .myAddress .listBox .listForm .listForm__links {
     margin-bottom: 1em;

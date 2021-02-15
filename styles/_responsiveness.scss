@@ -4,3 +4,14 @@
 @mixin for-tablet {
     @media (min-width: 700px) {@content; }
 }
+
+@mixin for-small-desktop {
+    @media (min-width: 850px) {@content; }
+}
+
+@mixin for-medium-desktop {
+    @media (min-width: 950px) {@content; }
+}
+@mixin for-desktop {
+    @media (min-width: 1050px) {@content; }
+}

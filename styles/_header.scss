@@ -14,6 +14,9 @@
 		align-self: center;
 		.navList__list {
 			display: none;
+			.navList__item {
+				display: none;
+			}
 			li {
 				border-bottom: 1px solid $textColor;
 				text-align: left;
@@ -33,6 +36,12 @@
 				&:visited {
 					color: $textColor;
 				}
+			}
+			.navlist__item {
+				& {
+					display: none;
+				}
+
 			}
 		}
 		.navList__list--active {
@@ -100,6 +109,12 @@
 						background-color: transparent;
 					}
 				}
+				.navlist__item {
+					& {
+						display: none;
+					}
+
+				}
 			}
 			.navList__list--active {
 				width: 51%;
@@ -134,6 +149,64 @@
 			.navList__list {
 				display: flex;
 				justify-content: space-between;
+				.navList__item {
+					display: inline;
+				}
+				li {
+					border-bottom: none;
+					background-color: transparent;
+					padding-bottom: 1em;
+				}
+				li:hover {
+					background-color: transparent;
+				}
+				a {
+					background-color: transparent;
+					text-decoration: none;
+					color: $primaryColor;
+					&:visited {
+						color: $primaryColor;
+						background-color: transparent;
+					}
+					&:hover {
+						font-size: 2em;
+					}
+				}
+				.navlist__item {
+					& {
+						display: none;
+					}
+
+				}
+			}
+		}
+	}
+}
+@include for-small-desktop {
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		background-image: url('../images/hea.png');
+		background-position: 100em;
+		height: 5em;
+		padding: 0;
+		margin: 0;
+		.containerLogo {
+			.containerLogo__pomatoLogo {
+				padding-left: 2em;
+				height: 3.5em;
+			}
+		}
+		.navList {
+			background-color: transparent;
+			width: 62%;
+			margin-left: 17em;
+			margin-top: 1em;
+			.navList__list {
+				display: flex;
+				justify-content: space-between;
 				li {
 					border-bottom: none;
 					background-color: transparent;
@@ -151,7 +224,69 @@
 						background-color: transparent;
 					}
 				}
+
+				.navlist__item {
+					& {
+						display: none;
+					}
+
+				}
 			}
 		}
 	}
 }
+@include for-medium-desktop {
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		background-image: url('../images/hea.png');
+		background-position: 100em;
+		height: 5em;
+		padding: 0;
+		margin: 0;
+		.containerLogo {
+			.containerLogo__pomatoLogo {
+				padding-left: 2em;
+				height: 3.5em;
+			}
+		}
+		.navList {
+			background-color: transparent;
+			width: 50%;
+			margin-left: 25em;
+			margin-top: 1em;
+			.navList__list {
+				display: flex;
+				justify-content: space-between;
+				li {
+					border-bottom: none;
+					background-color: transparent;
+					padding-bottom: 1em;
+
+					&:hover {
+						background-color: transparent;
+					}
+				}
+
+				a {
+					background-color: transparent;
+					text-decoration: none;
+					color: $primaryColor;
+					&:visited {
+						color: $primaryColor;
+						background-color: transparent;
+					}
+				}
+				.navlist__item {
+					& {
+						display: inline;
+					}
+
+				}
+			}
+		}
+	}
+}
+
